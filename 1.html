@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7f7f7;
+        }
+        .hero {
+            background: url('彩妝.jpg') center/cover no-repeat;
+            color: rgb(6, 6, 6);
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">彩妝店</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">註冊會員</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">登入</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">購物車</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        商品分類
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="productDropdown">
+                        <a class="dropdown-item" href="#">唇彩</a>
+                        <a class="dropdown-item" href="#">眼妝</a>
+                        <a class="dropdown-item" href="#">底妝</a>
+                        <a class="dropdown-item" href="#">工具</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+        <h1>Ethereal Beauty</h1>
+        <p>空靈美妆</p>
+    </header>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="etude_house_1723393964_899831ef_progressive.jpg" class="card-img-top" alt="Product Image">
+                        <img src="嘴巴.jpg" class="card-img-top" alt="Product Image">
+                        <div class="text-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">etude-house唇釉</h5>
+                        <p class="card-text">長效保濕，讓你的唇色更加迷人。</p>
+                        <button class="btn btn-primary">購買 - $390</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="3ce.jpg" class="card-img-top" alt="Product Image">
+                        <img src="4格.jpg" class="card-img-top" alt="Product Image">
+                        <div class="text-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">3ce眼影盤</h5>
+                        <p class="card-text">多種色彩選擇，適合日常與派對妝容。</p>
+                        <button class="btn btn-primary">購買 - $799</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="氣墊粉餅.jpg" class="card-img-top" alt="Product Image">
+                        <img src="氣墊顏色.jpg" class="card-img-top" alt="Product Image">
+                        <div class="text-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">TIRTIR氣墊粉餅</h5>
+                        <p class="card-text">輕薄透氣，打造自然無瑕妝感。</p>
+                        <button class="btn btn-primary">購買 - $550</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="腮紅.jpg" class="card-img-top" alt="Product Image">
+                        <img src="腮紅顏色.jpg" class="card-img-top" alt="Product Image">
+                        <div class="text-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">peripera腮紅</h5>
+                        <p class="card-text">自然紅潤，輕鬆打造立體妝容。</p>
+                        <button class="btn btn-primary">購買 - $200</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="睫毛膏.jpg" class="card-img-top" alt="Product Image">
+                        <img src="睫毛1.avif" class="card-img-top" alt="Product Image">
+                        <div class="text-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">kate睫毛膏</h5>
+                        <p class="card-text">濃密卷翹，讓雙眼更加深邃迷人。</p>
+                        <button class="btn btn-primary">購買 - $340</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="睫毛卸妝.jpg" class="card-img-top" alt="Product Image">
+                        <img src="睫毛1.jpg" class="card-img-top" alt="Product Image">
+                        <div class="text-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">kiss睫毛卸妝</h5>
+                        <p class="card-text">讓睫毛更容易卸掉。</p>
+                        <button class="btn btn-primary">購買 - $320</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="卸妝霜.jpg" class="card-img-top" alt="Product Image">
+                        <img src="些妝.jpg" class="card-img-top" alt="Product Image">
+                        <div class="text-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">胡蘿蔔卸妝霜</h5>
+                        <p class="card-text">濃淡妝輕鬆溶解、卸除黑頭廢除老廢角質。</p>
+                        <button class="btn btn-primary">購買 - $600</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="position-relative">
+                        <img src="化妝刷.jpg" class="card-img-top" alt="Product Image">
+                        <img src="刷具1.jpg" class="card-img-top" alt="Product Image">
+                        <div class="text-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">solone化妝刷套裝</h5>
+                        <p class="card-text">專業刷具，適合各種妝容需求。</p>
+                        <button class="btn btn-primary">購買 - $1750</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4">
+        <p>&copy; C瑄彩妝店</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+</body>
+</html>
